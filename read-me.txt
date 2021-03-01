@@ -1,0 +1,7 @@
+pré requisitos por enquanto:
+
+1- Python
+2- Flask. (pip install Flask)
+
+como executar o server(app.py)
+python app.py
