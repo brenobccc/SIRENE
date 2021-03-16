@@ -1,22 +1,29 @@
-from flask import Flask#importando o flask
+from flask import Flask, request
+from flask_cors import CORS, cross_origin#CORS: serve para quando eu for requisitar algo.
 
-app = Flask(__name__)#instanciando e inicializando a aplicação FLASK
+
+app = Flask(__name__) #instanciando e inicializando a aplicação FLASK
+
+cors = CORS(app)#CORS
+app.config['CORS_HEADERS'] = 'Content-Type'#CORS
 
 
-#__________________________________________
-
-@app.route('/')#rota para demonstração
+@app.route('/test')
 def teste():
-	return "<h1>testando</h1>"#retorna uma tag html com o nome testando
+	return 'teste2'
 
-
-@app.route('/teste2')#2 rota para demonstração
-def teste2():
-	return "<br><h1>testando2</h1>"#retorna uma tag html com o nome testando
-
-#__________________________________________
-
-
+@app.route('/')#rota padrão
+def predict():
+	return '<h1>teste</h1>'
+             
 
 if __name__ == "__main__": #passo final
-	app.run(debug=True,port="3000")	
+	app.run(debug=True,port="3000")	 
+   
+
+
+
+
+
+
+
