@@ -1,0 +1,10 @@
+{
+	"name":"SIRENE_testes",
+	"version":"1.0",
+	"description": "Teste de machine learning em uma extensao do chrome",
+	"browser_action":{
+		"default_popup":"index.html"
+	},
+	 "content_security_policy": "script-src 'self'; object-src 'self'",
+	"manifest_version":2
+}

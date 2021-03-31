@@ -1,0 +1,54 @@
+body{background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);}
+
+h1{
+	color: white; 
+	font-family: 'Roboto', sans-serif;
+}
+
+h4{
+	color: white; 
+	font-family: 'Roboto', sans-serif; 
+	font-size: 20px;
+}
+
+textarea{color: black;}
+
+#array{
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	border-radius: 0.2rem;
+	background-color: rgb(255, 255, 255);
+	border: none;
+	display: block;
+	border-bottom: 0.3rem solid transparent;
+	transition: all 0.3s;
+}
+
+#result{
+	color: white; 
+	font-family: 'Roboto', sans-serif; font-size: 20px;
+	font-size: 30px;
+}
+
+#botao {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  width: 90px;
+  height:50px;
+  margin-top: 20px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  transition-duration: 0.4s;
+
+}
+
+#botao:hover {
+  background-color: #ff4d4d; /* Green */
+  color: white;
+}
